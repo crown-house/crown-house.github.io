@@ -1,0 +1,14 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 250" width="512" height="512">
+	<style>
+		tspan { white-space:pre } 
+		.s0 { fill: #ff7a00;stroke: #ff7a00;stroke-linejoin: round;stroke-width: 10 } 
+		.s1 { fill: #ff7a00 } 
+		.t2 { font-size: 22px;fill: #ff7a00;font-family: "' Courier  New'" } 
+	</style>
+	<path class="s0" d="m30 50l40 37.5 55-75 55 75 40-37.5-15 75h-160z"/>
+	<path fill-rule="evenodd" class="s1" d="m52.5 144.5h145c4.14 0 7.5 3.36 7.5 7.5 0 4.14-3.36 7.5-7.5 7.5h-145c-4.14 0-7.5-3.36-7.5-7.5 0-4.14 3.36-7.5 7.5-7.5z"/>
+	<text id="C/C++" style="transform: matrix(2.5,0,0,2.5,126,215.5)">
+		<tspan x="-37.5" y="0" class="t2">C/C++
+</tspan>
+	</text>
+</svg>

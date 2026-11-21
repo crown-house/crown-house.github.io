@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crown Editor | The Ultimate C/C++ IDE</title>
+    <style>
+        /* CSS Styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            scroll-behavior: smooth; /* Smooth scrolling for links */
+        }
+
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        /* Navbar */
+        header {
+            width: 100%;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #1e1e1e;
+            border-bottom: 1px solid #333;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo-container img {
+            width: 40px; 
+            height: auto;
+        }
+
+        .logo-text {
+            font-size: 22px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            color: white;
+            text-decoration: none;
+        }
+
+        .logo-text span {
+            color: #FF7A00; 
+        }
+
+        /* Nav Links */
+        .nav-links {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: #aaaaaa;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #FF7A00;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            margin-top: 100px;
+            padding: 20px;
+            max-width: 800px;
+        }
+
+        .hero img {
+            width: 150px;
+            margin-bottom: 20px;
+            filter: drop-shadow(0px 0px 20px rgba(255, 122, 0, 0.4));
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 15px;
+            font-weight: 800;
+        }
+
+        .hero h1 span {
+            color: #FF7A00;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #aaaaaa;
+            margin-bottom: 40px;
+            line-height: 1.6;
+        }
+
+        /* Download Button */
+        .btn {
+            background-color: #FF7A00;
+            color: #121212;
+            padding: 15px 40px;
+            font-size: 18px;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn:hover {
+            background-color: #e66e00;
+            transform: translateY(-3px);
+            box-shadow: 0px 10px 20px rgba(255, 122, 0, 0.2);
+        }
+
+        /* Features Section */
+        .features {
+            display: flex;
+            gap: 30px;
+            margin-top: 80px;
+            padding: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 50px;
+        }
+
+        .feature-card {
+            background-color: #1e1e1e;
+            padding: 30px;
+            border-radius: 12px;
+            width: 250px;
+            text-align: center;
+            border: 1px solid #333;
+            transition: 0.3s;
+        }
+
+        .feature-card:hover {
+            border-color: #FF7A00;
+            transform: translateY(-5px);
+        }
+
+        .feature-card h3 {
+            color: #FF7A00;
+            margin-bottom: 10px;
+        }
+
+        .feature-card p {
+            color: #888;
+            font-size: 14px;
+        }
+
+        /* Footer */
+        footer {
+            width: 100%;
+            text-align: center;
+            padding: 20px;
+            background-color: #1e1e1e;
+            color: #888;
+            margin-top: auto;
+            border-top: 1px solid #333;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <a href="#" class="logo-container" style="text-decoration: none;">
+            <img src="crown_final_logo.svg" alt="Crown Logo">
+            <div class="logo-text">CROWN <span>HOUSE</span></div>
+        </a>
+        
+        <!-- Naye Links Yahan Hain -->
+        <div class="nav-links">
+            <a href="#features">Features</a>
+            <a href="#docs">Docs</a>
+            <a href="https://github.com/crown-house" target="_blank">GitHub</a>
+        </div>
+    </header>
+
+    <!-- Main Hero Section -->
+    <section class="hero">
+        <img src="crown_final_logo.svg" alt="Crown C/C++ Editor">
+        
+        <h1>The Ultimate <span>C/C++</span> Experience</h1>
+        <p>Lightning-fast, lightweight, and beautifully designed code editor. Built by developers, for developers. Crown House brings your code to life.</p>
+        
+        <!-- Download Button (Ab ye IDE.exe download karega) -->
+        <a href="IDE.exe" download class="btn">Download for Windows</a>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="feature-card">
+            <h3>⚡ Blazing Fast</h3>
+            <p>Optimized for performance so you can compile and run C/C++ code in milliseconds.</p>
+        </div>
+        <div class="feature-card">
+            <h3>🎨 Sleek Dark Theme</h3>
+            <p>Designed to reduce eye strain during those long night coding sessions.</p>
+        </div>
+        <div class="feature-card">
+            <h3>🛠️ Smart Intellisense</h3>
+            <p>Advanced autocomplete and error detection specifically tuned for C and C++.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Crown House. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
