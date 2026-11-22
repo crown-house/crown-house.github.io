@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docs | C Crown</title>
+    <meta name="description" content="How to download, verify, install and uninstall C Crown, plus fixes for common warnings.">
+    <link rel="icon" type="image/x-icon" href="crown_final_logo_dark.ico">
+    <link rel="icon" type="image/svg+xml" href="crown_final_logo.svg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo-container">
+            <img src="crown_final_logo.svg" alt="Crown logo">
+            <div class="logo-text">CROWN <span>HOUSE</span></div>
+        </a>
+        <nav class="nav-links" aria-label="Main">
+            <a href="index.html">Home</a>
+            <a href="features.html">Features</a>
+            <a href="docs.html" class="active" aria-current="page">Docs</a>
+            <a href="https://github.com/crown-house" target="_blank" rel="noopener">GitHub</a>
+        </nav>
+    </header>
+
+    <main class="page doc">
+        <h1 class="page-title">C Crown <span>Setup Guide</span></h1>
+        <p class="page-sub">Download, install and start using C Crown in a few minutes.</p>
+
+        <nav class="toc" aria-label="On this page">
+            <a href="#download">Download</a>
+            <a href="#verify">Verify</a>
+            <a href="#install">Install</a>
+            <a href="#projects">Project files</a>
+            <a href="#uninstall">Uninstall</a>
+            <a href="#help">Troubleshooting</a>
+        </nav>
+
+        <h2 id="download">1. Download</h2>
+        <p>Click the button below to download the installer. It is a single file named <code>CCrown_Setup_1.0.0.exe</code>.</p>
+        <p><a href="CCrown_Setup_1.0.0.exe" download class="btn">Download for Windows</a></p>
+
+        <h2 id="verify">2. Check the file (optional)</h2>
+        <p>To make sure your download is the real one, open Command Prompt in your Downloads folder and run:</p>
+        <pre class="code"><code>certutil -hashfile CCrown_Setup_1.0.0.exe SHA256</code></pre>
+        <p>The result must match this value:</p>
+        <pre class="code"><code class="hash">d6ed79a1d78c9bf5133b3ee6df3bbc45efb0f1a6d5a86e4715b838ee8e5587a7</code></pre>
+
+        <h2 id="install">3. Install</h2>
+        <ol>
+            <li>Double-click <code>CCrown_Setup_1.0.0.exe</code>.</li>
+            <li>If Windows shows a blue <strong>&ldquo;Windows protected your PC&rdquo;</strong> screen, click <strong>More info</strong>, then <strong>Run anyway</strong>. See the note below.</li>
+            <li>Read and accept the license agreement.</li>
+            <li>Choose the install folder, or keep the default one.</li>
+            <li>Choose your options: desktop shortcut, opening <code>.cCrown</code> project files with C Crown, opening <code>.c</code>, <code>.cpp</code> and <code>.h</code> files with C Crown, and the folder right-click menu.</li>
+            <li>Click <strong>Install</strong>, then <strong>Finish</strong> to start C Crown.</li>
+        </ol>
+        <div class="note">
+            <p><strong>Why does Windows show a warning?</strong></p>
+            <p>C Crown is a new program that is not digitally signed yet. Windows warns about every new, unsigned program. If the check in step 2 matches, the file is safe to run. A few antivirus tools may also flag new programs by mistake; if that happens, please contact us.</p>
+        </div>
+        <p>To install on many computers without any windows, run the installer from Command Prompt:</p>
+        <pre class="code"><code>CCrown_Setup_1.0.0.exe /VERYSILENT /SUPPRESSMSGBOXES /NORESTART</code></pre>
+
+        <h2 id="projects">4. Project files</h2>
+        <p>C Crown saves each project in a file ending with <code>.cCrown</code>. It keeps your project settings in one place.</p>
+        <ul>
+            <li>Double-click a <code>.cCrown</code> file to open the project in C Crown.</li>
+            <li>Right-click any folder and choose <strong>Open with C Crown</strong> to open it in the IDE.</li>
+            <li>Keep the <code>.cCrown</code> file together with your source files when you copy or share a project.</li>
+        </ul>
+
+        <h2 id="uninstall">5. Uninstall</h2>
+        <p>Open <strong>Settings &gt; Apps</strong>, find <strong>C Crown</strong> and click <strong>Uninstall</strong>. Your own projects and source files are not deleted.</p>
+
+        <h2 id="help">Troubleshooting</h2>
+        <ul>
+            <li><strong>The installer does not start:</strong> right-click it and choose <strong>Run as administrator</strong>.</li>
+            <li><strong>The file is blocked or deleted after download:</strong> your antivirus may have flagged it by mistake. Check the hash from step 2, then allow the file in your antivirus settings.</li>
+            <li><strong>Double-clicking a <code>.cCrown</code> file does nothing:</strong> install again and keep the <code>.cCrown</code> files option selected.</li>
+        </ul>
+        <p>Still stuck? Contact us at <a href="mailto:support@your-domain.com">support@your-domain.com</a>.</p>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Crown House. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
